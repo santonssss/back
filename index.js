@@ -3,9 +3,8 @@ import { promises as fsPromises } from "fs";
 import dotenv from "dotenv";
 const app = express();
 const PORT = process.env.PORT || 3001;
-
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 const filePath = "totalAmount.json";
 
 app.use((req, res, next) => {
