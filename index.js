@@ -1,6 +1,6 @@
-const express = require("express");
-const fs = require("fs").promises;
-require("dotenv").config();
+import express from "express";
+import { promises as fsPromises } from "fs";
+import dotenv from "dotenv";
 const app = express();
 const PORT = process.env.PORT || 3001;
 
